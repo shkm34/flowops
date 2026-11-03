@@ -1,5 +1,20 @@
-node_modules
-dist
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+
+# Environment secrets
 .env
+.env.*
+!.env.example
+
+# Local operating-system files
 .DS_Store
-src/generated
+
+# Local/generated files
+*.log
+.agents/
+.claude/
+.windsurf/
+skills-lock.json
+**/src/generated/
